@@ -107,6 +107,17 @@
             "</li>";
         },
 
+
+        "emphasis": function(locale) {
+            return "<li>" +
+              "<div class='btn-group'>" +
+              "<a class='btn' data-wysihtml5-command='more'> + locale.emphasis.more + "</a>" +
+                "<a class='btn' data-wysihtml5-command='split'>" + locale.emphasis.split + "</a>" +
+                "<a class='btn' data-wysihtml5-command='underline'>" + locale.emphasis.underline + "</a>" +
+              "</div>" +
+            "</li>";
+        },
+
         "color": function(locale) {
             return "<li class='dropdown'>" +
               "<a class='btn dropdown-toggle' data-toggle='dropdown' href='#'>" +
@@ -442,6 +453,8 @@
         "link": true,
         "image": true,
         "video": true,
+        "more": true,
+        "split": true,
         events: {},
         parserRules: {
             classes: {
@@ -475,7 +488,6 @@
                 "h3": {},
                 "more": 1,
                 "split": 1,
-                "split-right": 1,
                 "blockquote": {},
                 "u": 1,
                 "img": {
