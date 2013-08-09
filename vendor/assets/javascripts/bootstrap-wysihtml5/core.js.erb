@@ -307,7 +307,7 @@
 
                     urlInput.val(linkUrl);
                     self.editor.currentView.element.focus();
-                    self.editor.composer.commands.exec("insertVideo", { src: embedUrl, width: '640', height: '360' });
+                    self.editor.composer.commands.exec("insertVideo", { src: embedUrl, width: '853', height: '480' });
                 } else {
                     errorSpan.show();
                     //urlInput.parent().addClass('error');
@@ -474,6 +474,9 @@
                 "h2": {},
                 "h3": {},
                 "more": 1,
+                "td": 1,
+                "tr": 1,
+                "table": 1,
                 "split": 1,
                 "split-right": 1,
                 "blockquote": {},
